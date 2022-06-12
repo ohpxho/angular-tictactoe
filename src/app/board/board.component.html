@@ -1,0 +1,20 @@
+<div>
+	<button class="reset-btn" *ngIf="tictactoe.draw || tictactoe.winner" (click)="resetBoard()"></button>
+	<table class="table" (click)="tictactoe.winner? null : playerMove($event)" >
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</div>
